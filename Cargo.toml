@@ -6,3 +6,6 @@ edition = "2021"
 [dependencies]
 bevy = "0.14.0"
 bevy-inspector-egui = "0.25.1"
+
+[build]
+rustflags = ["--cfg=web_sys_unstable_apis"]
